@@ -19,7 +19,7 @@ public interface ExecutionService {
      void showPage();
 
     /**
-     * Asks for book name pattern and shows the books that match in form of table.
+     * Asks for book name pattern and shows the books that matches in form of table.
      */
      void searchCatalog();
 

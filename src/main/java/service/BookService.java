@@ -19,4 +19,11 @@ public interface BookService {
      * @param books - books to save
      */
     void save(List<Book> books) throws Exception;
+
+    /**
+     * Returns list of existing books with matching titles.
+     *
+     * @return list of existing books
+     */
+    List<Book> getAllByTitlePattern(String titlePattern) throws Exception;
 }

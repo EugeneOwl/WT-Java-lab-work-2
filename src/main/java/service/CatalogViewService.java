@@ -14,9 +14,7 @@ public interface CatalogViewService {
      void showCatalogPage() throws Exception;
 
     /**
-     * Outputs list of books with title matching book title pattern in form of table.
-     *
-     * @param title - book title pattern
+     * Asks for book title and outputs list of books with title matching book title pattern in form of table.
      */
-     void showCatalog(String title);
+     void searchInCatalog() throws Exception;
 }

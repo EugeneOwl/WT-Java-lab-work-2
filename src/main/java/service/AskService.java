@@ -4,7 +4,7 @@ public interface AskService {
 
     /**
      * Outputs message asking for input of menu option.
-     * Returns input numeric or null if input does not match.
+     * Returns input numeric or null if input does not matches.
      *
      * @return input numeric
      */

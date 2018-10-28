@@ -10,4 +10,5 @@ public class Messages {
     public static final String PAGE_NUMBER_IS_TO_BIG = ERROR_PREFIX + "Page number is out of catalog limit.";
 
     public static final String LEAVE_PAGE_MODE = "(enter to leave page mode)";
+    public static final String NO_BOOKS_FOUND = "No books found.";
 }

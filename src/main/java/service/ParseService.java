@@ -7,7 +7,7 @@ public interface ParseService {
 
     /**
      * Returns int numeric value from string.
-     * If string does not match returns -1.
+     * If string does not matches returns -1.
      *
      * @param string - string to parse
      * @return int numeric value from string
@@ -16,7 +16,7 @@ public interface ParseService {
 
     /**
      * Returns {@link BookType} value from string.
-     * If string does not match returns {@link BookType#UNKNOWN_BOOK}.
+     * If string does not matches returns {@link BookType#UNKNOWN_BOOK}.
      *
      * @param string - string to parse
      * @return int numeric value from string
@@ -34,7 +34,7 @@ public interface ParseService {
 
     /**
      * Returns {@link UserRole} value from string.
-     * If string does not match returns {@link UserRole#ANONYMOUS}.
+     * If string does not matches returns {@link UserRole#ANONYMOUS}.
      *
      * @param string - string to parse
      * @return int numeric value from string

@@ -8,7 +8,7 @@ import java.util.List;
 public interface MenuOptionService {
 
     /**
-     * Returns menu option by given numeric number. If number does not match returns null.
+     * Returns menu option by given numeric number. If number does not matches returns null.
      *
      * @param number - number of option
      *

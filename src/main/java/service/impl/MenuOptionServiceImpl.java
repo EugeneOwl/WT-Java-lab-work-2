@@ -54,6 +54,9 @@ public class MenuOptionServiceImpl implements MenuOptionService {
             case SHOW_PAGE:
                 catalogViewService.showCatalogPage();
                 return;
+            case SEARCH_CATALOG:
+                catalogViewService.searchInCatalog();
+                return;
 
             case LOG_OUT:
                 authService.logout();

@@ -21,5 +21,12 @@ public interface MenuOptionService {
      *
      * @return menu options list
      */
-    public List<MenuOption> getAllOptions(UserRole role);
+    public List<MenuOption> getAvailableOptions(UserRole role);
+
+    /**
+     * Processes given option executing needed operation.
+     *
+     * @param option - given option to process
+     */
+    public void processOption(MenuOption option);
 }

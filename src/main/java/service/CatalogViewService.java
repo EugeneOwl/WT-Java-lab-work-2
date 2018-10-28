@@ -16,9 +16,9 @@ public interface CatalogViewService {
     public void showCatalog(int pageNumber);
 
     /**
-     * Outputs list of books with name matching book name pattern in form of table.
+     * Outputs list of books with title matching book title pattern in form of table.
      *
-     * @param name - book name pattern
+     * @param title - book title pattern
      */
-    public void showCatalog(String name);
+    public void showCatalog(String title);
 }

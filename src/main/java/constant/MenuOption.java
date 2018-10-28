@@ -10,8 +10,14 @@ public enum MenuOption {
     LOG_IN(1, "log in", ANONYMOUS),
 
     SHOW_CATALOG(2, "show catalog", USER),
+    SHOW_PAGE(3, "show page", USER),
+    SEARCH_CATALOG(4, "search in catalog", USER),
 
-    ADD_BOOK(3, "add book", ADMIN);
+    ADD_BOOK(5, "add book", ADMIN),
+    UPDATE_BOOK(6, "update book", ADMIN),
+    REMOVE_BOOK(7, "remove book", ADMIN),
+
+    EXIT(0, "exit", null);
 
     private int number;
     private String label;

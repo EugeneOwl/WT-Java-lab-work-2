@@ -1,5 +1,7 @@
 package service;
 
+import entity.book.BookType;
+
 public interface InputService {
 
     /**
@@ -17,4 +19,12 @@ public interface InputService {
      * @return number in numeric format
      */
     public int inputNumber(String message);
+
+    /**
+     * Asks for input from keyboard with the given message. Returns book type extracted from text.
+     * If incorrect text was introduced then returns {@link BookType#UNKNOWN_BOOK}.
+     *
+     * @return number in numeric format
+     */
+    public BookType inputBookType(String message);
 }

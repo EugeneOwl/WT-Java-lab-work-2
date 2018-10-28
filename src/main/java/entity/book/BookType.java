@@ -3,7 +3,8 @@ package entity.book;
 public enum BookType {
 
     PAPER_BOOK("paper book"),
-    DIGITAL_BOOK("e-book");
+    DIGITAL_BOOK("e-book"),
+    UNKNOWN_BOOK("unknown");
 
     private String type;
 

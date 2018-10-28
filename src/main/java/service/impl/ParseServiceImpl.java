@@ -24,7 +24,7 @@ public class ParseServiceImpl implements ParseService {
     @Override
     public BookType getBookType(String string) {
         return Arrays.stream(BookType.values())
-                .filter(it -> it.name().equals(string))
+                .filter(it -> it.getLabel().equals(string))
                 .findFirst()
                 .orElse(UNKNOWN_BOOK);
     }

@@ -14,7 +14,7 @@ public interface InputService {
 
     /**
      * Asks for input from keyboard with the given message. Returns int number extracted from text.
-     * If no text was introduced then returns 0.
+     * If no text was introduced then returns -1.
      *
      * @return number in numeric format
      */

@@ -11,12 +11,12 @@ public interface BookDao {
      *
      * @return full list of existing books
      */
-    public List<Book> getAll();
+    public List<Book> getAll() throws Exception;
 
     /**
      * Saves given list of books to repository. All existing books in repository erased.
      *
      * @param books - books to save
      */
-    public void save(List<Book> books);
+    public void save(List<Book> books) throws Exception;
 }

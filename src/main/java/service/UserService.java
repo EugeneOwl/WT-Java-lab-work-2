@@ -10,14 +10,14 @@ public interface UserService {
      * @param name - name of needed user
      * @return - user with the given name
      */
-    public User getUser(String name);
+    User getUser(String name);
 
     /**
      * Sets up user of current session.
      *
      * @param user - user to set up
      */
-    public void setUpCurrentUser(User user);
+    void setUpCurrentUser(User user);
 
     /**
      * Returns current session user.
@@ -25,5 +25,5 @@ public interface UserService {
      *
      * @return current session user
      */
-    public User getCurrentUser();
+    User getCurrentUser();
 }

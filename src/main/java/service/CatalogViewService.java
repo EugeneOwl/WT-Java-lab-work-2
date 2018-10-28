@@ -5,7 +5,7 @@ public interface CatalogViewService {
     /**
      * Outputs full list of existing books in form of table.
      */
-    public void showCatalog();
+     void showCatalog();
 
     /**
      * Outputs page with given number of existing books in form of table.
@@ -13,12 +13,12 @@ public interface CatalogViewService {
      *
      * @param pageNumber - number of needed page.
      */
-    public void showCatalog(int pageNumber);
+     void showCatalog(int pageNumber);
 
     /**
      * Outputs list of books with title matching book title pattern in form of table.
      *
      * @param title - book title pattern
      */
-    public void showCatalog(String title);
+     void showCatalog(String title);
 }

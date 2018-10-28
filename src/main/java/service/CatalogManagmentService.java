@@ -9,21 +9,21 @@ public interface CatalogManagmentService {
      *
      * @param id - identifier of needed book
      */
-    public Book getBook(Long id);
+     Book getBook(int id);
 
     /**
      * Adds book to existing book catalog.
      *
      * @param book - book which will be added
      */
-    public void addBook(Book book);
+     void addBook(Book book);
 
     /**
      * Removes book with given identifier. If no book found then nothing happens.
      *
      * @param id - identifier of needed book
      */
-    public void removeBook(Long id);
+     void removeBook(int id);
 
     /**
      * Founds book with identifier of the given one and replaces it by the given book.
@@ -31,5 +31,5 @@ public interface CatalogManagmentService {
      *
      * @param book - book to update existing one
      */
-    public void updateBook(Book book);
+     void updateBook(Book book);
 }

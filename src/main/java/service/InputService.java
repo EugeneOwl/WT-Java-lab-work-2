@@ -10,7 +10,7 @@ public interface InputService {
      *
      * @return text in string format
      */
-    public String inputText(String message);
+     String inputText(String message);
 
     /**
      * Asks for input from keyboard with the given message. Returns int number extracted from text.
@@ -18,7 +18,7 @@ public interface InputService {
      *
      * @return number in numeric format
      */
-    public int inputNumber(String message);
+     int inputNumber(String message);
 
     /**
      * Asks for input from keyboard with the given message. Returns book type extracted from text.
@@ -26,5 +26,5 @@ public interface InputService {
      *
      * @return number in numeric format
      */
-    public BookType inputBookType(String message);
+     BookType inputBookType(String message);
 }

@@ -10,5 +10,5 @@ public interface AuthService {
      *
      * @return true if credentials are correct and false if username does not exist or password does not match or both
      */
-    public boolean authenticate(String name, String password);
+    boolean authenticate(String name, String password);
 }

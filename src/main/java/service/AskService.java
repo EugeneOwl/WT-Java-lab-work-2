@@ -8,7 +8,7 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForMenuOption();
+     String askForMenuOption();
 
     /**
      * Outputs message asking for input of username.
@@ -16,7 +16,7 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForUsername();
+     String askForUsername();
 
     /**
      * Outputs message asking for input of password.
@@ -24,7 +24,7 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForPassword();
+     String askForPassword();
 
     /**
      * Outputs message asking for input of book title.
@@ -32,7 +32,7 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForBookTitle();
+     String askForBookTitle();
 
     /**
      * Outputs message asking for input of book description.
@@ -40,7 +40,7 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForBookDescription();
+     String askForBookDescription();
 
     /**
      * Outputs message asking for input of book type.
@@ -48,7 +48,7 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForBookType();
+     String askForBookType();
 
     /**
      * Outputs message asking for input of book identifier.
@@ -56,10 +56,10 @@ public interface AskService {
      *
      * @return input text
      */
-    public String askForBookId();
+     String askForBookId();
 
     /**
      * Outputs message asking to update book.
      */
-    public void askToUpdateBook();
+     void askToUpdateBook();
 }

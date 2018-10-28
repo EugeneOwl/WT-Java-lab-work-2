@@ -6,13 +6,13 @@ public enum BookType {
     DIGITAL_BOOK("e-book"),
     UNKNOWN_BOOK("unknown");
 
-    private String type;
+    private String label;
 
-    BookType(String type) {
-        this.type = type;
+    BookType(String label) {
+        this.label = label;
     }
 
-    public String getType() {
-        return type;
+    public String getLabel() {
+        return label;
     }
 }

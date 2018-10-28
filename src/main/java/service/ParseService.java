@@ -7,7 +7,7 @@ public interface ParseService {
 
     /**
      * Returns int numeric value from string.
-     * If string does not match returns 0.
+     * If string does not match returns -1.
      *
      * @param string - string to parse
      * @return int numeric value from string

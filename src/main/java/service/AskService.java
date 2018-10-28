@@ -4,11 +4,11 @@ public interface AskService {
 
     /**
      * Outputs message asking for input of menu option.
-     * Returns input text.
+     * Returns input numeric or null if input does not match.
      *
-     * @return input text
+     * @return input numeric
      */
-     String askForMenuOption();
+     int askForMenuOption();
 
     /**
      * Outputs message asking for input of username.

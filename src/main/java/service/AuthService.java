@@ -3,12 +3,12 @@ package service;
 public interface AuthService {
 
     /**
-     * Validates user credentials and determines whether they correct or no.
-     *
-     * @param name - username
-     * @param password - password of user in pure form
-     *
-     * @return true if credentials are correct and false if username does not exist or password does not match or both
+     * Asks for credentials input and sets up current session user if given credentials match.
      */
-    boolean authenticate(String name, String password);
+    void authenticate() throws Exception;
+
+    /**
+     * Sets up current session user to null.
+     */
+    void logout();
 }

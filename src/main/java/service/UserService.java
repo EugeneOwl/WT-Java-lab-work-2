@@ -10,20 +10,5 @@ public interface UserService {
      * @param name - name of needed user
      * @return - user with the given name
      */
-    User getUser(String name);
-
-    /**
-     * Sets up user of current session.
-     *
-     * @param user - user to set up
-     */
-    void setUpCurrentUser(User user);
-
-    /**
-     * Returns current session user.
-     * If no user logged in then returns null.
-     *
-     * @return current session user
-     */
-    User getCurrentUser();
+    User getUser(String name) throws Exception;
 }

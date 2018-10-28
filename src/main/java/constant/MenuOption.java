@@ -17,6 +17,8 @@ public enum MenuOption {
     UPDATE_BOOK(6, "update book", ADMIN),
     REMOVE_BOOK(7, "remove book", ADMIN),
 
+    LOG_OUT(8, "log out", USER),
+
     EXIT(0, "exit", null);
 
     private int number;

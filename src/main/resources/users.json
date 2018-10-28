@@ -2,17 +2,17 @@
   "array": [
     {
       "id": "1",
-      "name": "eugene",
+      "name": "user",
       "email": "eugenevaleska1994@gmail.com",
-      "role": "ADMIN",
-      "password": "pwd"
+      "role": "USER",
+      "password": "$2a$10$Y5T8fPAXjC.k5cb2Mn9Gr./yTJ/XxCkrHBbopb.m8Qx2X/d8CFrd6"
     },
     {
       "id": "2",
-      "name": "alex",
+      "name": "admin",
       "email": "alex999@gmail.com",
-      "role": "USER",
-      "password": "password"
+      "role": "ADMIN",
+      "password": "$2a$10$X3DAQAhLeAjaXD9ZWUBOsOZLVBhyw/tK9bAy11rsAlfajNyZQHora"
     }
   ]
 }

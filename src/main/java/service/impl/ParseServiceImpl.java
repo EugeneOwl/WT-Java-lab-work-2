@@ -17,7 +17,7 @@ public class ParseServiceImpl implements ParseService {
         try {
             return Integer.parseInt(string);
         } catch (NumberFormatException e) {
-            return 0;
+            return -1;
         }
     }
 

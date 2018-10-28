@@ -21,12 +21,13 @@ public interface MenuOptionService {
      *
      * @return menu options list
      */
-     List<MenuOption> getAvailableOptions(UserRole role);
+     List<MenuOption> getAvailableOptions(UserRole userRole);
 
     /**
-     * Processes given option executing needed operation.
+     * Processes given option executing needed operation if enough permission.
+     * If user role is too sick for operation the nothing happens.
      *
      * @param option - given option to process
      */
-     void processOption(MenuOption option);
+     void processOption(MenuOption option) throws Exception;
 }

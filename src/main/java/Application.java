@@ -1,5 +1,5 @@
-import dao.UserDao;
-import dao.impl.UserDaoImpl;
+import service.MenuService;
+import service.impl.MenuServiceImpl;
 
 /**
  * @author e.ivanov
@@ -7,7 +7,7 @@ import dao.impl.UserDaoImpl;
  */
 public class Application {
     public static void main(String[] args) throws Exception {
-        UserDao userDao = new UserDaoImpl();
-        System.out.println(userDao.getUser("eugene"));
+        MenuService menuService = new MenuServiceImpl();
+        menuService.runMenu();
     }
 }

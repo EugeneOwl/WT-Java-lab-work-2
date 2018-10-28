@@ -1,8 +1,5 @@
-import dao.BookDao;
-import dao.impl.BookDaoImpl;
-import entity.book.Book;
-
-import java.util.List;
+import dao.UserDao;
+import dao.impl.UserDaoImpl;
 
 /**
  * @author e.ivanov
@@ -10,8 +7,7 @@ import java.util.List;
  */
 public class Application {
     public static void main(String[] args) throws Exception {
-        BookDao bookDao = new BookDaoImpl();
-        List<Book> books = bookDao.getAll();
-        bookDao.save(books);
+        UserDao userDao = new UserDaoImpl();
+        System.out.println(userDao.getUser("eugene"));
     }
 }

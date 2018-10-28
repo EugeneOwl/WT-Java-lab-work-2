@@ -10,5 +10,5 @@ public interface UserDao {
      * @param name - name of needed user
      * @return - user with the given name
      */
-    public User getUser(String name);
+    public User getUser(String name) throws Exception;
 }

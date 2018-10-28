@@ -1,6 +1,7 @@
 package service;
 
 import entity.book.BookType;
+import entity.user.UserRole;
 
 public interface ParseService {
 
@@ -30,4 +31,13 @@ public interface ParseService {
      * @return string
      */
     String getString(String string);
+
+    /**
+     * Returns {@link UserRole} value from string.
+     * If string does not match returns {@link UserRole#ANONYMOUS}.
+     *
+     * @param string - string to parse
+     * @return int numeric value from string
+     */
+    UserRole getUserRole(String string);
 }

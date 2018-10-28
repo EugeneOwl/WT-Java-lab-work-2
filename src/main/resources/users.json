@@ -1,0 +1,18 @@
+{
+  "array": [
+    {
+      "id": "1",
+      "name": "eugene",
+      "email": "eugenevaleska1994@gmail.com",
+      "role": "ADMIN",
+      "password": "pwd"
+    },
+    {
+      "id": "2",
+      "name": "alex",
+      "email": "alex999@gmail.com",
+      "role": "USER",
+      "password": "password"
+    }
+  ]
+}

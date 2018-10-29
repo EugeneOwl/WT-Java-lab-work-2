@@ -1,7 +1,6 @@
 package service.impl;
 
 import constant.MenuOption;
-import entity.user.UserRole;
 import service.*;
 
 import java.util.List;

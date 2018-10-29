@@ -22,8 +22,13 @@ public class CatalogManagementServiceImpl implements CatalogManagmentService {
     }
 
     @Override
-    public void removeBook() {
-
+    public void removeBook() throws Exception {
+        int id = askService.askForBookId();
+        if (id == -1) {
+            System.out.println(ENTITY_NOT_FOUND);
+            return;
+        }
+        bookService.removeBook(id);
     }
 
     @Override

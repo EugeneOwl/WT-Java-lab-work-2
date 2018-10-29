@@ -64,6 +64,9 @@ public class MenuOptionServiceImpl implements MenuOptionService {
             case UPDATE_BOOK:
                 catalogManagmentService.updateBook();
                 return;
+            case REMOVE_BOOK:
+                catalogManagmentService.removeBook();
+                return;
 
             case LOG_OUT:
                 authService.logout();

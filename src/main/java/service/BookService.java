@@ -39,7 +39,7 @@ public interface BookService {
      *
      * @param id - identifier of needed book
      */
-    void removeBook(int id);
+    void removeBook(int id) throws Exception;
 
     /**
      * Founds book with identifier of the given one and replaces it by the given book.

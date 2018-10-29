@@ -10,7 +10,7 @@ public interface CatalogManagmentService {
     /**
      * Asks fro book id and removes book with given identifier. If no book found then nothing happens.
      */
-     void removeBook();
+     void removeBook() throws Exception;
 
     /**
      * Asks for book parameters ounds book with identifier of the given one and replaces it by the given book.

@@ -42,8 +42,13 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void removeBook(int id) {
-
+    public void removeBook(int id) throws Exception {
+        List<Book> books = getAll();
+        List<Book> booksWithoutRemovedOne = books
+                .stream()
+                .filter(it -> it.getId() != id)
+                .collect(Collectors.toList());
+        saveAll(booksWithoutRemovedOne);
     }
 
     @Override

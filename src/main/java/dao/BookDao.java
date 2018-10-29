@@ -16,7 +16,7 @@ public interface BookDao {
     /**
      * Saves given list of books to repository. All existing books in repository erased.
      *
-     * @param books - books to save
+     * @param books - books to saveAll
      */
-    public void save(List<Book> books) throws Exception;
+    public void saveAll(List<Book> books) throws Exception;
 }

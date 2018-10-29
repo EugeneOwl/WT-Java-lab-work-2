@@ -17,6 +17,12 @@ public class Book {
         this.description = description;
     }
 
+    public Book(String title, BookType type, String description) {
+        this.title = title;
+        this.type = type;
+        this.description = description;
+    }
+
     @Override
     public String toString() {
         return "Book{" +

@@ -3,9 +3,7 @@ package service.impl;
 import service.AskService;
 import service.InputService;
 
-import static constant.Questions.ASK_FOR_MENU_OPTION;
-import static constant.Questions.ASK_FOR_PASSWORD;
-import static constant.Questions.ASK_FOR_USERNAME;
+import static constant.Questions.*;
 
 public class AskServiceImpl implements AskService {
 
@@ -28,26 +26,21 @@ public class AskServiceImpl implements AskService {
 
     @Override
     public String askForBookTitle() {
-        return null;
+        return inputService.inputText(ASK_FOR_BOOK_TITLE);
     }
 
     @Override
     public String askForBookDescription() {
-        return null;
+        return inputService.inputText(ASK_FOR_BOOK_DESCRIPTION);
     }
 
     @Override
     public String askForBookType() {
-        return null;
+        return inputService.inputText(ASK_FOR_BOOK_TYPE);
     }
 
     @Override
-    public String askForBookId() {
-        return null;
-    }
-
-    @Override
-    public void askToUpdateBook() {
-
+    public int askForBookId() {
+        return inputService.inputNumber(ASK_FOR_BOOK_ID);
     }
 }

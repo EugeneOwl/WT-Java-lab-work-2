@@ -31,7 +31,7 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public void save(List<Book> books) throws Exception {
+    public void saveAll(List<Book> books) throws Exception {
         FileWriter fileWriter = new FileWriter(RESOURCES_PATH + "/books.json");
         JSONArray jsonArray = new JSONArray();
         books.forEach(it -> jsonArray.add(getJsonObjectFromBook(it)));

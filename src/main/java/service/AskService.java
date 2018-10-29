@@ -56,10 +56,5 @@ public interface AskService {
      *
      * @return input text
      */
-     String askForBookId();
-
-    /**
-     * Outputs message asking to update book.
-     */
-     void askToUpdateBook();
+     int askForBookId();
 }

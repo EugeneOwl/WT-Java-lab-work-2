@@ -18,6 +18,7 @@ public class MenuOptionServiceImpl implements MenuOptionService {
     private AuthService authService = new AuthServiceImpl();
     private SessionService sessionService = new SessionServiceImpl();
     private CatalogViewService catalogViewService = new CatalogViewServiceImpl();
+    private CatalogManagmentService catalogManagmentService = new CatalogManagementServiceImpl();
 
     @Override
     public MenuOption getOption(int number) {
@@ -56,6 +57,12 @@ public class MenuOptionServiceImpl implements MenuOptionService {
                 return;
             case SEARCH_CATALOG:
                 catalogViewService.searchInCatalog();
+                return;
+            case ADD_BOOK:
+                catalogManagmentService.addBook();
+                return;
+            case UPDATE_BOOK:
+                catalogManagmentService.updateBook();
                 return;
 
             case LOG_OUT:

@@ -1,7 +1,10 @@
 package constant;
 
+import static constant.ConsoleColors.ANSI_RED;
+import static constant.ConsoleColors.ANSI_RESET;
+
 public class Messages {
-    private static final String ERROR_PREFIX = "ERROR: ";
+    private static final String ERROR_PREFIX = ANSI_RED + "ERROR: " + ANSI_RESET;
 
     public static final String USERNAME_DOES_NOT_EXIST = ERROR_PREFIX + "No user with given username found.";
     public static final String PASSWORD_DOES_NOT_MATCH = ERROR_PREFIX + "Password is incorrect.";

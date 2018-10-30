@@ -1,6 +1,5 @@
 package service.impl;
 
-import entity.book.BookType;
 import service.InputService;
 import service.ParseService;
 
@@ -23,10 +22,5 @@ public class InputServiceImpl implements InputService {
         System.out.println(message);
         String answer = scanner.nextLine();
         return parseService.getInt(answer);
-    }
-
-    @Override
-    public BookType inputBookType(String message) {
-        return null;
     }
 }

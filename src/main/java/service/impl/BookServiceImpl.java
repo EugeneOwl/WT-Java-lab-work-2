@@ -9,6 +9,8 @@ import service.RegexService;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static constant.Messages.ENTITY_NOT_FOUND;
+
 public class BookServiceImpl implements BookService {
 
     private BookDao bookDao = new BookDaoImpl();
@@ -48,6 +50,10 @@ public class BookServiceImpl implements BookService {
                 .stream()
                 .filter(it -> it.getId() != id)
                 .collect(Collectors.toList());
+        if (books.size() == booksWithoutRemovedOne.size()) {
+            System.out.println(ENTITY_NOT_FOUND);
+            return;
+        }
         saveAll(booksWithoutRemovedOne);
     }
 
@@ -55,10 +61,12 @@ public class BookServiceImpl implements BookService {
     public void updateBook(Book book) throws Exception {
         List<Book> books = getAll();
         int bookNumber = getBookNumberById(books, book.getId());
-        if (bookNumber != -1) {
-            books.set(bookNumber, book);
-            saveAll(books);
+        if (bookNumber < 0 || bookNumber > books.size() - 1) {
+            System.out.println(ENTITY_NOT_FOUND);
+            return;
         }
+        books.set(bookNumber, book);
+        saveAll(books);
     }
 
     private boolean titleMatch(String titlePattern, String title) {

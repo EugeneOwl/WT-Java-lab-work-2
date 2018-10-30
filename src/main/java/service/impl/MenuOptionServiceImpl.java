@@ -30,9 +30,16 @@ public class MenuOptionServiceImpl implements MenuOptionService {
 
     @Override
     public List<MenuOption> getAvailableOptions(UserRole userRole) {
-        return Arrays.stream(MenuOption.values())
+        List<MenuOption> availableOptions = Arrays.stream(MenuOption.values())
                 .filter(it -> permissionService.haveEnoughRights(userRole, it.getUserRole()))
                 .collect(Collectors.toList());
+        if (sessionService.getCurrentUser() != null) {
+            availableOptions = availableOptions
+                    .stream()
+                    .filter(it -> it.getNumber() != 1)
+                    .collect(Collectors.toList());
+        }
+        return availableOptions;
     }
 
     @Override
@@ -41,7 +48,8 @@ public class MenuOptionServiceImpl implements MenuOptionService {
             System.out.println(NO_OPTION_FOUND);
             return;
         }
-        if (!permissionService.haveEnoughRights(sessionService.getCurrentUserRole(), option.getUserRole())) {
+        if (!permissionService.haveEnoughRights(sessionService.getCurrentUserRole(), option.getUserRole())
+                || (option.getNumber() == 1 && sessionService.getCurrentUser() != null)) {
             System.out.println(OPERATION_FORBIDDEN_FOR_ROLE);
             return;
         }

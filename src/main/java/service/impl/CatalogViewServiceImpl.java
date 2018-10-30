@@ -31,8 +31,8 @@ public class CatalogViewServiceImpl implements CatalogViewService {
     public void showCatalogPage() throws Exception {
         List<Book> books = bookService.getAll();
         while (true) {
-            int pageNumber = inputService.inputNumber(ASK_FOR_PAGE_NUMBER);
-            if (pageNumber == -1) {
+            int pageNumber = inputService.inputNumber(ASK_FOR_PAGE_NUMBER) - 1;
+            if (pageNumber < 0) {
                 return;
             }
             showPageOfBooks(books, pageNumber);

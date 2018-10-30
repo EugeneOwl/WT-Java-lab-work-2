@@ -34,7 +34,7 @@ public class CatalogManagementServiceImpl implements CatalogManagmentService {
     @Override
     public void updateBook() throws Exception {
         int id = askService.askForBookId();
-        if (id == -1) {
+        if (id == -1 || bookService.getById(id) == null) {
             System.out.println(ENTITY_NOT_FOUND);
             return;
         }

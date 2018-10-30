@@ -17,6 +17,15 @@ public class BookServiceImpl implements BookService {
     private RegexService regexService = new RegexServiceImpl();
 
     @Override
+    public Book getById(int id) throws Exception {
+        return bookDao.getAll()
+                .stream()
+                .filter(it -> it.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
+
+    @Override
     public List<Book> getAll() throws Exception {
         return bookDao.getAll();
     }

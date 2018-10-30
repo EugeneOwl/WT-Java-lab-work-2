@@ -7,6 +7,14 @@ import java.util.List;
 public interface BookService {
 
     /**
+     * Returns book by its id or null if not found.
+     *
+     * @param id - book identifier
+     * @return - book
+     */
+    Book getById(int id) throws Exception;
+
+    /**
      * Returns full list of existing books.
      *
      * @return full list of existing books
